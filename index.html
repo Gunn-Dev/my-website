@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>My Online CV</title>
+ <style>
 </head>
 <style>
   /* Default styles */
@@ -20,6 +21,8 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
   img {
@@ -47,11 +50,13 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: left;
   }
   
   ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 0;
   }
   
   li {
@@ -67,6 +72,32 @@
     text-decoration: underline;
   }
   
+  /* Styles for screens up to 600px wide */
+  @media (max-width: 600px) {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Styles for screens from 601px to 800px wide */
+  @media (min-width: 601px) and (max-width: 800px) {
+    img {
+      width: 180px;
+      height: 180px;
+    }
   .container {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -161,6 +192,16 @@
     </p>
 
     <h2>Contact Details</h2>
+    <ul>
+      <li>Name: Cameron Gunn</li>
+      <li>Phone: 068 565 5303</li>
+      <li>Email: CameronGunn012@gmail.com</li>
+    </ul>
+    <ul>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/cameron-gunn-08501a211/">LinkedIn Profile</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
+    </ul>
     <p>
       Name: Cameron Gunn<br>
       Phone: 068 565 5303<br>
@@ -183,6 +224,26 @@
     </ul>
 
     <h2>Education</h2>
+    <ul>
+      <li>
+        <h3>Graphic Design</h3>
+        <p>Lance Gunn Design Co., 2016-Present</p>
+      </li>
+      <li>
+        <h3>Software Development</h3>
+        <p>Hyperion Dev, 2023-Present</p>
+      </li>
+      <li>
+        <h3>Web Development</h3>
+        <p>Self Taught, 2019-Present</p>
+      </li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <h3>Software Developer</h3>
+        <p>
     <p>
       Graphic Design<br>
       <ul>
@@ -211,6 +272,19 @@
           - Developed web applications<br>
           - Created multiple time-saving applications<br>
           - Implemented new features and enhancements
+        </p>
+      </li>
+      <li>
+        <h3>Graphic Design</h3>
+        <p>
+          Gunn Design, 2016-Present<br>
+          Responsibilities:<br>
+          - Designed multiple pamphlets for One Sun<br>
+          - Created and designed the logo for M-Power<br>
+          - Designed and printed magazines for Exxaro
+        </p>
+      </li>
+    </ul>
         </li>
         <li>
           Graphic Design<br>
