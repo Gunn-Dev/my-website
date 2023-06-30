@@ -8,7 +8,7 @@
     body {
       background-color: #efefef;
     }
-  
+    
     .container {
       /* Common styles for all screen sizes */
       display: flex;
@@ -19,10 +19,11 @@
       margin: 0 auto;
       max-width: 800px;
       padding: 20px;
+      background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-  
+    
     img {
       border-radius: 50%;
       width: 200px;
@@ -30,109 +31,63 @@
       object-fit: cover;
       margin-bottom: 20px;
     }
-  
+    
     h1 {
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 10px;
     }
-  
+    
     h2 {
       font-size: 24px;
       font-weight: bold;
       margin-top: 30px;
       margin-bottom: 10px;
     }
-  
+    
     p {
       font-size: 16px;
       line-height: 1.5;
       margin-bottom: 20px;
     }
-  
+    
     ul {
       list-style-type: none;
       padding: 0;
     }
-  
+    
     li {
       margin-bottom: 5px;
     }
-  
+    
     a {
       color: #0066cc;
       text-decoration: none;
     }
-  
+    
     a:hover {
       text-decoration: underline;
     }
-  
-    .container p:nth-of-type(5),
-    .container p:nth-of-type(8) {
-      text-align: left;
-      margin-top: 30px;
-    }
-  
-    .container p:nth-of-type(5)::before,
-    .container p:nth-of-type(8)::before {
-      content: "\2022";
-      color: #0066cc;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-  
-    .container p:nth-of-type(5),
-    .container p:nth-of-type(8) {
-      margin-left: 20px;
-    }
-  
-    .container p:nth-of-type(5) {
-      margin-top: 20px;
-    }
-  
-    .container p:nth-of-type(7),
-    .container p:nth-of-type(10) {
-      text-align: left;
-      margin-left: 20px;
-    }
-  
-    .container p:nth-of-type(7) {
-      margin-top: 10px;
-    }
-  
-    .container p:nth-of-type(7)::before,
-    .container p:nth-of-type(10)::before {
-      content: "-";
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-      font-weight: bold;
-    }
-  
-    /* Styles for screens up to 600px wide */
+    
     @media (max-width: 600px) {
       img {
         width: 150px;
         height: 150px;
       }
-  
+    
       h1 {
         font-size: 24px;
       }
-  
+    
       h2 {
         font-size: 20px;
       }
-  
+    
       p {
         font-size: 14px;
       }
     }
-  
-    /* Styles for screens from 601px to 800px wide */
+    
     @media (min-width: 601px) and (max-width: 800px) {
       img {
         width: 180px;
@@ -143,97 +98,104 @@
 </head>
 
 <body>
-  <header>
-    <h1>Short Bio</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Short Bio</h1>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#contact">Contact Details</a></li>
-      <li><a href="#skills">Skills and Competencies</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#work">Work Experience</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="bio">
-      <h2>About Me</h2>
-      <p>
-        Hello, my name is Cameron Gunn. I am a passionate software developer with experience in web development. I love
-        creating innovative solutions and learning new technologies. My motivation lies in building user-friendly and
-        efficient applications that solve real-world problems.
-      </p>
-      <p>
-        I am also an experienced and skilled graphic designer that has specialized in all forms of graphic design over
-        the last 7 years in my family business "Lance Gunn Design Co.". In those years, I have completed over 500 successful
-        projects across multiple industries.
-      </p>
+    <section id="photo">
+      <img src="your-photo.jpg" alt="Your Photo">
     </section>
 
-    <section id="contact">
-      <h2>Contact Details</h2>
+    <nav>
       <ul>
-        <li>Name: Cameron Gunn</li>
-        <li>Phone: 068 565 5303</li>
-        <li>Email: CameronGunn012@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/cameron-gunn-08501a211/">LinkedIn Profile</a></li>
-        <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
+        <li><a href="#contact">Contact Details</a></li>
+        <li><a href="#skills">Skills and Competencies</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work Experience</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <section id="skills">
-      <h2>Skills and Competencies</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>Graphic Design</li>
-      </ul>
-    </section>
+    <main>
+      <section id="bio">
+        <h2>About Me</h2>
+        <p>
+          Hello, my name is Cameron Gunn. I am a passionate software developer with experience in web development. I love
+          creating innovative solutions and learning new technologies. My motivation lies in building user-friendly and
+          efficient applications that solve real-world problems.
+        </p>
+        <p>
+          I am also an experienced and skilled graphic designer that has specialized in all forms of graphic design over
+          the last 7 years in my family business "Lance Gunn Design Co.". In those years, I have completed over 500 successful
+          projects across multiple industries.
+        </p>
+      </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <h3>Graphic Design</h3>
-      <ul>
-        <li>Lance Gunn Design Co., 2016-Present</li>
-      </ul>
-      <h3>Software Development</h3>
-      <ul>
-        <li>Hyperion Dev, 2023-Present</li>
-      </ul>
-      <h3>Web Development</h3>
-      <ul>
-        <li>Self Taught, 2019-Present</li>
-      </ul>
-    </section>
+      <section id="contact">
+        <h2>Contact Details</h2>
+        <ul>
+          <li>Name: Cameron Gunn</li>
+          <li>Phone: 068 565 5303</li>
+          <li>Email: CameronGunn012@gmail.com</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/cameron-gunn-08501a211/">LinkedIn Profile</a></li>
+          <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
+        </ul>
+      </section>
 
-    <section id="work">
-      <h2>Work Experience</h2>
-      <h3>Software Developer</h3>
-      <ul>
-        <li>Hyperion Dev, 2023-Present</li>
-        <li>Responsibilities:</li>
-        <li>- Developed web applications</li>
-        <li>- Created multiple time-saving applications</li>
-        <li>- Implemented new features and enhancements</li>
-      </ul>
-      <h3>Graphic Design</h3>
-      <ul>
-        <li>Gunn Design, 2016-Present</li>
-        <li>Responsibilities:</li>
-        <li>- Designed multiple pamphlets for One Sun</li>
-        <li>- Created and designed the logo for M-Power</li>
-        <li>- Designed and printed magazines for Exxaro</li>
-      </ul>
-    </section>
-  </main>
+      <section id="skills">
+        <h2>Skills and Competencies</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>Graphic Design</li>
+        </ul>
+      </section>
 
-  <footer>
-    <p>&copy; 2023 My Online CV. All rights reserved.</p>
-  </footer>
+      <section id="education">
+        <h2>Education</h2>
+        <h3>Graphic Design</h3>
+        <ul>
+          <li>Lance Gunn Design Co., 2016-Present</li>
+        </ul>
+        <h3>Software Development</h3>
+        <ul>
+          <li>Hyperion Dev, 2023-Present</li>
+        </ul>
+        <h3>Web Development</h3>
+        <ul>
+          <li>Self Taught, 2019-Present</li>
+        </ul>
+      </section>
+
+      <section id="work">
+        <h2>Work Experience</h2>
+        <h3>Software Developer</h3>
+        <ul>
+          <li>Hyperion Dev, 2023-Present</li>
+          <li>Responsibilities:</li>
+          <li>- Developed web applications</li>
+          <li>- Created multiple time-saving applications</li>
+          <li>- Implemented new features and enhancements</li>
+        </ul>
+        <h3>Graphic Design</h3>
+        <ul>
+          <li>Gunn Design, 2016-Present</li>
+          <li>Responsibilities:</li>
+          <li>- Designed multiple pamphlets for One Sun</li>
+          <li>- Created and designed the logo for M-Power</li>
+          <li>- Designed and printed magazines for Exxaro</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Online CV. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
+
