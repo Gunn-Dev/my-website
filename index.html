@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>My Online CV</title>
  <style>
+</head>
+<style>
   /* Default styles */
   body {
     background-color: #efefef;
@@ -96,9 +98,85 @@
       width: 180px;
       height: 180px;
     }
+  .container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
   }
+  
+  .container p:nth-of-type(5),
+  .container p:nth-of-type(8) {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .container p:nth-of-type(5)::before,
+  .container p:nth-of-type(8)::before {
+    content: "\2022";
+    color: #0066cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .container p:nth-of-type(5),
+  .container p:nth-of-type(8) {
+    margin-left: 20px;
+  }
+  
+  .container p:nth-of-type(5) {
+    margin-top: 20px;
+  }
+  
+  .container p:nth-of-type(7),
+  .container p:nth-of-type(10) {
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .container p:nth-of-type(7) {
+    margin-top: 10px;
+  }
+  
+  .container p:nth-of-type(7)::before,
+  .container p:nth-of-type(10)::before {
+    content: "-";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+  }
+  
+  /* Styles for screens up to 600px wide */
+  @media (max-width: 600px) {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Styles for screens from 601px to 800px wide */
+  @media (min-width: 601px) and (max-width: 800px) {
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
 </style>
-
 <body>
   <div class="container">
     <img src="profile_image.jpg" alt="Cameron Gunn">
@@ -124,6 +202,16 @@
       <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
       <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
     </ul>
+    <p>
+      Name: Cameron Gunn<br>
+      Phone: 068 565 5303<br>
+      Email: CameronGunn012@gmail.com<br>
+      <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/cameron-gunn-08501a211/">LinkedIn Profile</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
+      </ul>
+    </p>
 
     <h2>Skills and Competencies</h2>
     <ul>
@@ -156,6 +244,29 @@
       <li>
         <h3>Software Developer</h3>
         <p>
+    <p>
+      Graphic Design<br>
+      <ul>
+        <li>Lance Gunn Design Co., 2016-Present</li>
+      </ul>
+      
+      Software Development<br>
+      <ul>
+        <li>Hyperion Dev, 2023-Present</li>
+      </ul>
+      
+      Web Development<br>
+      <ul>
+        <li>Self Taught, 2019-Present</li>
+      </ul>
+    </p>
+
+    <!-- Work experience -->
+    <h2>Work Experience</h2>
+    <p>
+      <ul>
+        <li>
+          Software Developer<br>
           Hyperion Dev, 2023-Present<br>
           Responsibilities:<br>
           - Developed web applications<br>
@@ -174,6 +285,17 @@
         </p>
       </li>
     </ul>
+        </li>
+        <li>
+          Graphic Design<br>
+          Gunn Design, 2016-Present<br>
+          Responsibilities:<br>
+          - Designed multiple pamphlets for One Sun<br>
+          - Created And Designed The Logo For M-Power<br>
+          - Designed and printed magazines for Exxaro
+        </li>
+      </ul>
+    </p>
   </div>
 </body>
 </html>
